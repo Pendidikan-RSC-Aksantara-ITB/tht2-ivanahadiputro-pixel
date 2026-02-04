@@ -1,0 +1,151 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram name="Halaman-1" id="HYNoRyo905Ljrzqnw-6a">
+    <mxGraphModel dx="2877" dy="994" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-3" target="rrvnRq77Aco_3NhlcAUP-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-3" target="rrvnRq77Aco_3NhlcAUP-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-3" target="rrvnRq77Aco_3NhlcAUP-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-3" value="GCSBackend" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="350" width="220" height="210" as="geometry">
+            <mxRectangle x="310" y="30" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-8" value="- swarmManager : SwarmManager&lt;div&gt;- mapservice : MapService&lt;/div&gt;&lt;div&gt;- commLink : CommunicationLink&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-3">
+          <mxGeometry x="14.5" y="30" width="191" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-11" value="+ recieveTelemetery(t : telemetry)&lt;div&gt;+ sendCommand(c : command)&lt;/div&gt;&lt;div&gt;+ updateSystemState()&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-3">
+          <mxGeometry x="5" y="140" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-10" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-3" target="rrvnRq77Aco_3NhlcAUP-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="480" as="sourcePoint" />
+            <mxPoint x="330" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-13" target="rrvnRq77Aco_3NhlcAUP-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-13" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; command" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="890" width="160" height="120" as="geometry">
+            <mxRectangle x="310" y="30" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-15" value="- targetRobotID : String" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-13">
+          <mxGeometry x="-5" y="30" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-16" value="+ execute()" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-13">
+          <mxGeometry x="30" y="70" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-14" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-13" target="rrvnRq77Aco_3NhlcAUP-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-10" y="1020" as="sourcePoint" />
+            <mxPoint x="40" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-18" target="rrvnRq77Aco_3NhlcAUP-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-18" value="CommunicationLink" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="575" width="150" height="120" as="geometry">
+            <mxRectangle x="310" y="30" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-20" value="- protocol : String" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-18">
+          <mxGeometry x="20" y="30" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-21" value="+ send(data)&lt;div&gt;+ recieve()&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-18">
+          <mxGeometry x="35" y="70" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-19" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-18" target="rrvnRq77Aco_3NhlcAUP-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="705" as="sourcePoint" />
+            <mxPoint x="750" y="655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-29" target="rrvnRq77Aco_3NhlcAUP-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-29" value="Robot" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="850" width="210" height="210" as="geometry">
+            <mxRectangle x="310" y="30" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-31" value="- robotId : String&lt;div&gt;- position : Vector2&lt;/div&gt;&lt;div&gt;- healthStatus : String&lt;/div&gt;&lt;div&gt;- sensorData : SensorData&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-29">
+          <mxGeometry x="10" y="50" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-32" value="+ updateState(t : Telemetry)&lt;div&gt;+ executeCommand(c : Command)&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-29">
+          <mxGeometry x="-10" y="140" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-30" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-29" target="rrvnRq77Aco_3NhlcAUP-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="295" y="980" as="sourcePoint" />
+            <mxPoint x="345" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-33" target="rrvnRq77Aco_3NhlcAUP-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-33" value="Telemetry" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="840" width="220" height="140" as="geometry">
+            <mxRectangle x="310" y="30" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-36" value="- robotId : String&lt;div&gt;- position : Vector2&lt;/div&gt;&lt;div&gt;- healthStatus : String&lt;/div&gt;&lt;div&gt;- sensorData : SensorDta&lt;/div&gt;&lt;div&gt;- Timestamp : Time&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-33">
+          <mxGeometry x="45" y="40" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-40" target="rrvnRq77Aco_3NhlcAUP-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-40" target="rrvnRq77Aco_3NhlcAUP-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-40" value="SensorData" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1310" width="180" height="90" as="geometry">
+            <mxRectangle x="310" y="30" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-42" value="objectDistance : float&lt;div&gt;velocity : float&lt;/div&gt;&lt;div&gt;temperature : float&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-40">
+          <mxGeometry x="25" y="40" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-47" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt; HealthStatus" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="1055" width="165" height="80" as="geometry">
+            <mxRectangle x="310" y="30" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-49" value="NORMAL&lt;div&gt;WARNING&lt;/div&gt;&lt;div&gt;CRITICAL&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-47">
+          <mxGeometry x="35" y="25" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-56" target="rrvnRq77Aco_3NhlcAUP-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-56" value="SwarmManager" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="590" width="220" height="210" as="geometry">
+            <mxRectangle x="310" y="30" width="140" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-57" value="- robots: Map&amp;lt;ID, Robot&amp;gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="rrvnRq77Aco_3NhlcAUP-56">
+          <mxGeometry x="14.5" y="30" width="191" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-59" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rrvnRq77Aco_3NhlcAUP-56" target="rrvnRq77Aco_3NhlcAUP-56">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="720" as="sourcePoint" />
+            <mxPoint x="330" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rrvnRq77Aco_3NhlcAUP-60" value="+registerRobot(r, Robiot)&lt;div&gt;+ updateRobot(t: Telemetry)&lt;/div&gt;&lt;div&gt;+ getRobot(id : ID)&lt;/div&gt;&lt;div&gt;+ getAllRobots() : list&amp;lt;Robot&amp;gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="720" width="190" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
